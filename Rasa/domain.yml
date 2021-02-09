@@ -1,0 +1,153 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- search_movie_data
+- affirm
+- chitchat:
+    is_retrieval_intent: true
+- dismiss
+- search_similar_movies
+- greet
+- recommend_movie_genre
+- deny
+- search_by_director
+- thanks
+- bot_challenge
+- goodbye
+- search_with_actor
+- stop
+- year:
+    is_retrieval_intent: true
+entities:
+- actor
+- director
+- genre
+- genre_2
+- genre_3
+- movie_title
+- year
+slots:
+  actor:
+    type: text
+    influence_conversation: true
+  director:
+    type: text
+    influence_conversation: true
+  movie_title:
+    type: text
+    influence_conversation: true
+  year:
+    type: text
+    influence_conversation: true
+  genre:
+    type: text
+    influence_conversation: true
+  genre_2:
+    type: text
+    influence_conversation: true
+  genre_3:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: |-
+      Hi! I am Quentin, and I am here to help you with your movie decisions. 
+       I can recommend a good movie, find information on a film, and such. Have we chatted before?
+  utter_met_before:
+  - text: Great and it is nice to chat again. What can I help you with today?
+  utter_not_met_before:
+  - text: |-
+      Well, it is nice to chat with you now. You can ask me questions like...What movies has Brad Pitt starred in? 
+       Or something like...What movies has Patty Jenkins directed? You can also ask me for my recommendations.
+       I can recommend movies based on genres and other movies. What can I help you with?
+  utter_did_that_help:
+  - text: I hope that helped. What can we explore next?
+  utter_next:
+  - text: What else I can help you find?
+  - text: What are we looking up next?
+  - text: Next request?
+  utter_happy:
+  - text: Great, what can help you find next?
+  utter_whatelse:
+  - text: What can I do to help?
+  utter_ok:
+  - text: Okay. I am always here to help.
+  - text: Cool, don't hesitate to reach back out to me.
+  utter_goodbye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  - text: Bye bye!
+  utter_try_again:
+  - text: I don't think we are talking the same language. Please try asking your question again.
+  - text: Please ask your question. We just aren't connecting on that one.
+  utter_i_am_a_bot:
+  - text: I am a bot, named Quentin. I love movies, and I am here to help you with your movie questions.
+  utter_chitchat/ask_name:
+  - text: My name is Quentin. You can call me Quentin, Q, Movie Bot. I am good with any of those.
+  - text: My friends call me Quentin.
+  utter_chitchat/what_do_you_like:
+  - text: I love old Kung Fu movies. The 36th Chamber of Shaolin and Five Fingers of Death are a couple.
+  - text: I love movies. The coolest movie ever is Rio Bravo, but I also love The Great Escape and Taxi Driver.
+  - text: I'm really into everything movie related. If there is a movie to be watched, I will watch it.
+  utter_welcome:
+  - text: You are very welcome
+  - text: No problem at all
+  - text: My pleasure
+  utter_second_chance:
+  - text: I am so sorry. Let me check again.
+  - text: I thought I had it the first time. Give me a second please.
+  - text: I hate it when I get that wrong. Let me check the list again.
+  - text: So many options, I must have hit the wrong button. Sorry about that.
+  - text: Let me look through my records again. You are human, so you understand that more than me. One second, please.
+  utter_on_it:
+  - text: Let me get started.
+  - text: I almost have it.
+  - text: Let me see what I can find.
+  - text: The results should be up in just a second.
+  - text: So many movies to go through...
+  - text: There is some good info in here. I will have it all put together very soon.
+  - text: It blows my mind that there are this many movies. I'm still looking, so please give me a second.
+  - text: You would think being a bot would make this job easier. HA!
+  - text: Too many movies and no play makes Quentin a dull bot.
+  - text: I will have more information shortly.
+actions:
+- action_actor_verification
+- action_actor_verification_2
+- action_director_verification
+- action_director_verification_2
+- action_movie_data_lookup
+- action_movie_data_lookup_2
+- action_movie_data_year
+- action_movie_data_year_2
+- action_movie_rec_year
+- action_movie_rec_year_2
+- action_movie_verification
+- action_movie_verification_2
+- action_rec_movie_by_genre
+- action_rec_movie_by_movie
+- action_rec_movie_by_movie_2
+- action_search_by_director
+- action_search_by_director_2
+- action_search_with_actor
+- action_search_with_actor_2
+- utter_chitchat
+- utter_chitchat/ask_name
+- utter_chitchat/what_do_you_like
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_i_am_a_bot
+- utter_met_before
+- utter_next
+- utter_not_met_before
+- utter_ok
+- utter_on_it
+- utter_second_chance
+- utter_try_again
+- utter_welcome
+- utter_whatelse

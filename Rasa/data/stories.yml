@@ -1,0 +1,740 @@
+version: "2.0"
+
+stories:
+- story: are you a bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_i_am_a_bot
+
+- story: intro_met_before
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+
+- story: intro_new
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_not_met_before
+
+- story: chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+
+- story: find_movies_with_actor
+  steps:
+  - intent: search_with_actor
+  - action: utter_on_it
+  - action: action_actor_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_search_with_actor
+  - action: utter_next
+
+- story: find_movies_with_actor_2
+  steps:
+  - intent: search_with_actor
+  - action: utter_on_it
+  - action: action_actor_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_actor_verification_2
+  - intent: affirm
+  - action: action_search_with_actor_2
+  - action: utter_next
+
+- story: find_movies_with_actor_3
+  steps:
+  - intent: search_with_actor
+  - action: utter_on_it
+  - action: action_actor_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_actor_verification_2
+  - intent: deny
+  - action: utter_try_again
+
+- story: find_movies_by_director
+  steps:
+  - intent: search_by_director
+  - action: utter_on_it
+  - action: action_director_verification
+  - intent: affirm
+  - action: action_search_by_director
+  - action: utter_happy
+
+- story: find_movies_by_director_2
+  steps:
+  - intent: search_by_director
+  - action: utter_on_it
+  - action: action_director_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_director_verification_2
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_search_by_director_2
+  - action: utter_happy
+
+- story: find_movies_by_director_3
+  steps:
+  - intent: search_by_director
+  - action: utter_on_it
+  - action: action_director_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_director_verification_2
+  - intent: deny
+  - action: utter_try_again
+
+- story: genre_movie_path_incorrect
+  steps:
+  - intent: recommend_movie_genre
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_next
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_movie_data
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_whatelse
+
+- story: sad path 2
+  steps:
+  - intent: search_movie_data
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - intent: year
+  - action: action_movie_data_year
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_whatelse
+
+- story: rating_of_movie
+  steps:
+  - intent: search_movie_data
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_next
+
+- story: rating_of_movie 2
+  steps:
+  - intent: search_movie_data
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_movie_data_lookup_2
+  - action: utter_next
+
+- story: director_of_movie
+  steps:
+  - intent: search_movie_data
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_next
+
+- story: recommend movie like movie
+  steps:
+    - intent: search_similar_movies
+    - action: utter_on_it
+    - action: action_movie_verification
+    - intent: affirm
+    - action: action_rec_movie_by_movie
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_next
+
+- story: recommend movie like movie 2
+  steps:
+    - intent: search_similar_movies
+    - action: utter_on_it
+    - action: action_movie_verification
+    - action: utter_second_chance
+    - intent: deny
+    - action: action_movie_verification_2
+    - intent: affirm
+    - action: action_rec_movie_by_movie_2
+    - intent: year
+    - action: action_movie_rec_year
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_next
+
+- story: recommend movie like movie 3
+  steps:
+    - intent: search_similar_movies
+    - action: utter_on_it
+    - action: action_movie_verification
+    - intent: deny
+    - action: utter_second_chance
+    - action: action_movie_verification_2
+    - intent: deny
+    - action: utter_try_again
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: search_similar_movies
+    entities:
+    - movie_title: Matrix
+  - slot_was_set:
+    - movie_title: Matrix
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_rec_movie_by_movie
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_not_met_before
+  - intent: search_similar_movies
+    entities:
+    - movie_title: the dark knight
+  - slot_was_set:
+    - movie_title: the dark knight
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: deny
+  - action: utter_try_again
+  - intent: search_with_actor
+    entities:
+    - actor: ed norton
+  - slot_was_set:
+    - actor: ed norton
+  - action: utter_on_it
+  - action: action_actor_verification
+  - intent: affirm
+  - action: action_search_with_actor
+  - action: utter_next
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_by_director
+    entities:
+    - director: oliver stone
+  - slot_was_set:
+    - director: oliver stone
+  - action: utter_on_it
+  - action: action_director_verification
+  - intent: affirm
+  - action: action_search_by_director
+  - intent: search_movie_data
+    entities:
+    - movie_title: Snowden
+  - slot_was_set:
+    - movie_title: Snowden
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - intent: search_movie_data
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_next
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_similar_movies
+    entities:
+    - movie_title: Rushmore
+  - slot_was_set:
+    - movie_title: Rushmore
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_rec_movie_by_movie
+  - intent: search_similar_movies
+    entities:
+    - movie_title: matrix
+  - slot_was_set:
+    - movie_title: matrix
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_rec_movie_by_movie
+  - action: utter_next
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: romantic
+    - genre_2: comedy
+  - slot_was_set:
+    - genre: romantic
+  - slot_was_set:
+    - genre_2: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: search_movie_data
+    entities:
+    - movie_title: Rushmore
+  - slot_was_set:
+    - movie_title: Rushmore
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_movie_data_lookup
+  - action: utter_next
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: search_movie_data
+    entities:
+    - movie_title: black panther
+  - slot_was_set:
+    - movie_title: black panther
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_whatelse
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: recommend_movie_genre
+    entities:
+    - genre: thriller
+  - slot_was_set:
+    - genre: thriller
+  - action: action_rec_movie_by_genre
+  - action: utter_whatelse
+  - intent: search_movie_data
+    entities:
+    - movie_title: Memento
+  - slot_was_set:
+    - movie_title: Memento
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_movie_data_lookup
+  - action: utter_whatelse
+  - intent: search_similar_movies
+    entities:
+    - movie_title: Shutter Island
+  - slot_was_set:
+    - movie_title: Shutter Island
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_rec_movie_by_movie_2
+  - action: utter_did_that_help
+  - intent: search_similar_movies
+    entities:
+    - movie_title: martrix
+  - slot_was_set:
+    - movie_title: martrix
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_rec_movie_by_movie_2
+  - action: utter_next
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: search_movie_data
+    entities:
+    - movie_title: Black Panther
+  - slot_was_set:
+    - movie_title: Black Panther
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: deny
+  - action: utter_try_again
+  - intent: recommend_movie_genre
+    entities:
+    - genre: romantic
+    - genre_2: comedy
+  - slot_was_set:
+    - genre: romantic
+  - slot_was_set:
+    - genre_2: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: search_movie_data
+    entities:
+    - movie_title: the shining
+  - slot_was_set:
+    - movie_title: the shining
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_movie_data_lookup_2
+  - action: utter_next
+  - intent: search_similar_movies
+    entities:
+    - movie_title: the shining
+  - slot_was_set:
+    - movie_title: the shining
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_rec_movie_by_movie_2
+  - action: utter_did_that_help
+
+- story: interactive_story_9
+  steps:
+  - intent: recommend_movie_genre
+    entities:
+    - genre: comedy
+  - slot_was_set:
+    - genre: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: search_movie_data
+    entities:
+    - movie_title: fruitvale station
+  - slot_was_set:
+    - movie_title: fruitvale station
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_movie_data_lookup
+  - action: utter_next
+  - intent: search_similar_movies
+    entities:
+    - movie_title: groundhog's day
+  - slot_was_set:
+    - movie_title: groundhog's day
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_rec_movie_by_movie
+  - intent: bot_challenge
+  - action: utter_i_am_a_bot
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_not_met_before
+  - intent: recommend_movie_genre
+    entities:
+    - genre_2: adventure
+  - slot_was_set:
+    - genre_2: adventure
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: bot_challenge
+  - action: utter_i_am_a_bot
+  - intent: chitchat
+  - action: utter_chitchat
+  - intent: search_movie_data
+    entities:
+    - movie_title: Captain Marvel
+  - slot_was_set:
+    - movie_title: Captain Marvel
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_movie_data_lookup_2
+  - action: utter_next
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+  - intent: thanks
+  - action: utter_welcome
+
+- story: interactive_story_11
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: recommend_movie_genre
+    entities:
+    - genre: action
+  - slot_was_set:
+    - genre: action
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_whatelse
+  - intent: search_by_director
+    entities:
+    - director: christopher nolan
+  - slot_was_set:
+    - director: christopher nolan
+  - action: action_director_verification
+  - intent: affirm
+  - action: action_search_by_director
+  - intent: search_movie_data
+    entities:
+    - movie_title: Insomnia
+  - slot_was_set:
+    - movie_title: Insomnia
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_movie_data_lookup
+  - action: utter_next
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: family
+    - genre_2: comedy
+  - slot_was_set:
+    - genre: family
+  - slot_was_set:
+    - genre_2: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: recommend_movie_genre
+    entities:
+    - genre: action
+    - genre_2: thriller
+  - slot_was_set:
+    - genre: action
+  - slot_was_set:
+    - genre_2: thriller
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_whatelse
+  - intent: recommend_movie_genre
+    entities:
+    - genre: family
+  - slot_was_set:
+    - genre: family
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_14
+  steps:
+  - intent: recommend_movie_genre
+    entities:
+    - genre: action
+    - genre_2: comedy
+  - slot_was_set:
+    - genre: action
+  - slot_was_set:
+    - genre_2: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - slot_was_set:
+    - genre: null
+  - slot_was_set:
+    - genre_2: null
+  - slot_was_set:
+    - genre_3: null
+  - action: utter_did_that_help
+  - intent: search_movie_data
+    entities:
+    - movie_title: Deadpool
+  - slot_was_set:
+    - movie_title: Deadpool
+  - action: action_movie_verification
+  - intent: affirm
+  - action: utter_on_it
+  - action: action_movie_data_lookup
+  - action: utter_whatelse
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_15
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: search_movie_data
+    entities:
+    - movie_title: Field of Dreams
+  - slot_was_set:
+    - movie_title: Field of Dreams
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_whatelse
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_16
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_not_met_before
+  - intent: search_movie_data
+    entities:
+    - movie_title: Star Wars
+  - slot_was_set:
+    - movie_title: Star Wars
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: deny
+  - action: utter_second_chance
+  - action: action_movie_verification_2
+  - intent: affirm
+  - action: action_movie_data_lookup_2
+  - action: action_movie_data_year_2
+
+- story: interactive_story_17
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_met_before
+  - intent: search_similar_movies
+    entities:
+    - movie_title: Major League
+  - slot_was_set:
+    - movie_title: Major League
+  - action: utter_on_it
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_rec_movie_by_movie
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_next
+  - intent: recommend_movie_genre
+    entities:
+    - genre: sport
+    - genre_2: comedy
+  - slot_was_set:
+    - genre: sport
+  - slot_was_set:
+    - genre_2: comedy
+  - action: utter_on_it
+  - action: action_rec_movie_by_genre
+  - slot_was_set:
+    - genre: null
+  - slot_was_set:
+    - genre_2: null
+  - slot_was_set:
+    - genre_3: null
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: interactive_story_18
+  steps:
+  - intent: search_movie_data
+    entities:
+    - movie_title: Rushmore
+  - slot_was_set:
+    - movie_title: Rushmore
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - intent: dismiss
+  - action: utter_ok
+  - action: utter_goodbye
+

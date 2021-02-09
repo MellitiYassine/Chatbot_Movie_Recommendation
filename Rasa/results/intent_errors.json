@@ -1,0 +1,1298 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.47212061285972595
+    }
+  },
+  {
+    "text": "can you recommend a good comedy?",
+    "intent": "recommend_general",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4713743031024933
+    }
+  },
+  {
+    "text": "find an action movie",
+    "intent": "recommend_general",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.6852243542671204
+    }
+  },
+  {
+    "text": "find me a movie",
+    "intent": "recommend_general",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7696613073348999
+    }
+  },
+  {
+    "text": "what do you like?",
+    "intent": "recommend_general",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9991958737373352
+    }
+  },
+  {
+    "text": "Tell me more about you.",
+    "intent": "get_introduction",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6279205083847046
+    }
+  },
+  {
+    "text": "What do you do?",
+    "intent": "get_introduction",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9152032136917114
+    }
+  },
+  {
+    "text": "how to use you?",
+    "intent": "get_introduction",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8765103220939636
+    }
+  },
+  {
+    "text": "instructions",
+    "intent": "get_introduction",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.943019449710846
+    }
+  },
+  {
+    "text": "How do you work?",
+    "intent": "get_introduction",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8080208897590637
+    }
+  },
+  {
+    "text": "Find movie with John Travolta and Uma Thurman",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9266148209571838
+    }
+  },
+  {
+    "text": "Find flicks with Brad Pitt",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5874232649803162
+    }
+  },
+  {
+    "text": "Find movie with Johny Depp",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4324033856391907
+    }
+  },
+  {
+    "text": "What is the movie with Brad Pitt",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.379290372133255
+    }
+  },
+  {
+    "text": "Hey bot find movies with Woody Allen",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6502764821052551
+    }
+  },
+  {
+    "text": "Find me a movie with Madonna",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.6187480092048645
+    }
+  },
+  {
+    "text": "Give me a movie with Sting",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.6401588320732117
+    }
+  },
+  {
+    "text": "did Anna Nab star in",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8308036923408508
+    }
+  },
+  {
+    "text": "Movies with Daniel Day-Lewis",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3360079526901245
+    }
+  },
+  {
+    "text": "What has Robert De Niro starred in?",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6532392501831055
+    }
+  },
+  {
+    "text": "what did Philip Seymour Hoffman act in",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4446485638618469
+    }
+  },
+  {
+    "text": "find movies with Meryl Streep",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9426774382591248
+    }
+  },
+  {
+    "text": "give me movies with Adam Driver",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6602962613105774
+    }
+  },
+  {
+    "text": "find me movies with Jennifer Lawrence",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8621987104415894
+    }
+  },
+  {
+    "text": "well, find me movies with Jennifer Lawrence",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5651635527610779
+    }
+  },
+  {
+    "text": "Find me movies with Sting",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8591446876525879
+    }
+  },
+  {
+    "text": "Find me movies with Jennifer Lawrence",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8650954961776733
+    }
+  },
+  {
+    "text": "movies performed by jean reno",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5371096730232239
+    }
+  },
+  {
+    "text": "Find me movies with Brad Pitt",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9619948267936707
+    }
+  },
+  {
+    "text": "movies with Jean Reno",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8159823417663574
+    }
+  },
+  {
+    "text": "give me movies by Brad Pitt",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.496344655752182
+    }
+  },
+  {
+    "text": "What did Gal Gadot star in?",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.577092170715332
+    }
+  },
+  {
+    "text": "What has Denzel Washington starred in?",
+    "intent": "search_by_actor",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4549225866794586
+    }
+  },
+  {
+    "text": "Find a movie directed by Quentin Tarantino.",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7952567338943481
+    }
+  },
+  {
+    "text": "What can you find me directed by [Guillermo del Toro](director?",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5854383111000061
+    }
+  },
+  {
+    "text": "What has Ridley Scott directed?",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9737681150436401
+    }
+  },
+  {
+    "text": "Find titles by Penny Marshall.",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3618253171443939
+    }
+  },
+  {
+    "text": "Give me movies by Martin Scorcese.",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8752496838569641
+    }
+  },
+  {
+    "text": "Find me movies by Ingmar Bergman",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5013381838798523
+    }
+  },
+  {
+    "text": "what does justin benson have out there?",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4607105255126953
+    }
+  },
+  {
+    "text": "give me titles by Aaron Moorhead",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4852217137813568
+    }
+  },
+  {
+    "text": "movie directed by Francis Ford Coppola",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.771912157535553
+    }
+  },
+  {
+    "text": "Find movies by Oliver Stone",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.41395142674446106
+    }
+  },
+  {
+    "text": "movies directed by Taika Waititi",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5511937141418457
+    }
+  },
+  {
+    "text": "movies by Oliver Stone",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.47359487414360046
+    }
+  },
+  {
+    "text": "movies by Woody Allen",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.486283540725708
+    }
+  },
+  {
+    "text": "What is the director Taika Waititi known for",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5750311017036438
+    }
+  },
+  {
+    "text": "find movies by Woody Allen",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.33910274505615234
+    }
+  },
+  {
+    "text": "Get me a movie by Oliver Stone",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4804159998893738
+    }
+  },
+  {
+    "text": "get me a movie by Kathryn Bigelow",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4284089505672455
+    }
+  },
+  {
+    "text": "give me movies by Stanley Kubrick",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5710225105285645
+    }
+  },
+  {
+    "text": "Find me movies by Greata Gerwig",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9928005933761597
+    }
+  },
+  {
+    "text": "Find me movies by Stanley Kubrik",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7876457571983337
+    }
+  },
+  {
+    "text": "give me movies by Guillermo del Toro",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.30219459533691406
+    }
+  },
+  {
+    "text": "guy ritchie director",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7546111941337585
+    }
+  },
+  {
+    "text": "What has Ridley Scott directed",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9737681150436401
+    }
+  },
+  {
+    "text": "Give me a movie by Guillermo del Toro",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5320255160331726
+    }
+  },
+  {
+    "text": "Find me a movie by Oliver Stone",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4132809042930603
+    }
+  },
+  {
+    "text": "find me movies by Oliver Stone",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7916281819343567
+    }
+  },
+  {
+    "text": "What is the director Patty Jenkins known for",
+    "intent": "search_by_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5670766830444336
+    }
+  },
+  {
+    "text": "When was Alien released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8060760498046875
+    }
+  },
+  {
+    "text": "What year did Pulp Fiction come out?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5698356032371521
+    }
+  },
+  {
+    "text": "When was Zombieland out?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6006277203559875
+    }
+  },
+  {
+    "text": "what is the release of Rushmore",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9656683206558228
+    }
+  },
+  {
+    "text": "when was The Dead Do not Die out?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9771015048027039
+    }
+  },
+  {
+    "text": "give me the release of Tigers Are Not Afraid",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5834866762161255
+    }
+  },
+  {
+    "text": "When was Wonder Woman released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6092463135719299
+    }
+  },
+  {
+    "text": "What was The devil wears Prada released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.46139317750930786
+    }
+  },
+  {
+    "text": "out date for black panther",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5768435001373291
+    }
+  },
+  {
+    "text": "release date for Roma",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.2907068729400635
+    }
+  },
+  {
+    "text": "when was The Mule released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.48214980959892273
+    }
+  },
+  {
+    "text": "let me know when was I am not a witch released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4647468328475952
+    }
+  },
+  {
+    "text": "give me the release for the favourite.",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7139716148376465
+    }
+  },
+  {
+    "text": "release for a house in the prairie",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.47685959935188293
+    }
+  },
+  {
+    "text": "when was Match point released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3430097997188568
+    }
+  },
+  {
+    "text": "when was The Lure released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.39915329217910767
+    }
+  },
+  {
+    "text": "when was Joker released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7543242573738098
+    }
+  },
+  {
+    "text": "when was Joker released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7543242573738098
+    }
+  },
+  {
+    "text": "when was joker released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7654855847358704
+    }
+  },
+  {
+    "text": "when was Alien released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8101871013641357
+    }
+  },
+  {
+    "text": "When was The Matrix released?",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4363771677017212
+    }
+  },
+  {
+    "text": "when was The Matrix released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4338496923446655
+    }
+  },
+  {
+    "text": "When was The Matrix Reloaded released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6095172762870789
+    }
+  },
+  {
+    "text": "when was The devil wears prada released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5633351802825928
+    }
+  },
+  {
+    "text": "when was alien released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8200303912162781
+    }
+  },
+  {
+    "text": "When was Excess Baggage released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7488855123519897
+    }
+  },
+  {
+    "text": "when was The Shining released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9452420473098755
+    }
+  },
+  {
+    "text": "when was Alien released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8101871013641357
+    }
+  },
+  {
+    "text": "When was se7en released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6909626126289368
+    }
+  },
+  {
+    "text": "when was the shining released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9442038536071777
+    }
+  },
+  {
+    "text": "When was Fight Club released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.48458778858184814
+    }
+  },
+  {
+    "text": "When was Alien released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8060760498046875
+    }
+  },
+  {
+    "text": "What was the release of Patriot Games",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9027920961380005
+    }
+  },
+  {
+    "text": "When was Patriot Games released",
+    "intent": "release_year_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8906027674674988
+    }
+  },
+  {
+    "text": "What is the plot for Alien?",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7401471138000488
+    }
+  },
+  {
+    "text": "give me the summary for Terminator Genesys",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.903077244758606
+    }
+  },
+  {
+    "text": "overview for Jo Jo Rabbit",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7018739581108093
+    }
+  },
+  {
+    "text": "give me the overview for The Art of Self Defense",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.869428813457489
+    }
+  },
+  {
+    "text": "what is The Dead Do not Die about?",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9361997246742249
+    }
+  },
+  {
+    "text": "give me the plot for Match Point",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4982345998287201
+    }
+  },
+  {
+    "text": "What is Kramer vs Kramer about?",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.521106481552124
+    }
+  },
+  {
+    "text": "give me the summary of Rushmore.",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9871895909309387
+    }
+  },
+  {
+    "text": "plot for skills matter",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.36603882908821106
+    }
+  },
+  {
+    "text": "overview for hp laptop",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7289952039718628
+    }
+  },
+  {
+    "text": "what is the plot for Coco",
+    "intent": "search_plot_of_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.49443161487579346
+    }
+  },
+  {
+    "text": "What is the rating for Alien",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.3676636517047882
+    }
+  },
+  {
+    "text": "How was Lady Bird rated",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8992761373519897
+    }
+  },
+  {
+    "text": "How did Terminator rate",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7909899950027466
+    }
+  },
+  {
+    "text": "rating for The Lure",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7767443656921387
+    }
+  },
+  {
+    "text": "give me the rating for Thelma",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6803210377693176
+    }
+  },
+  {
+    "text": "score for city of ghosts",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9982013702392578
+    }
+  },
+  {
+    "text": "how is super dark times rated?",
+    "intent": "search_rating_for_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.98130863904953
+    }
+  },
+  {
+    "text": "Who directed Black Panther",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4150467813014984
+    }
+  },
+  {
+    "text": "who was the director of I am not a witch",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5968123078346252
+    }
+  },
+  {
+    "text": "Get me the director of Mission Impossible Fallout",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9394641518592834
+    }
+  },
+  {
+    "text": "Leave No Trace was by who?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6913130879402161
+    }
+  },
+  {
+    "text": "Who directed Terminator",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8698477149009705
+    }
+  },
+  {
+    "text": "Joker was directed by who?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.47435641288757324
+    }
+  },
+  {
+    "text": "who was Paddington 2 by?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6636483073234558
+    }
+  },
+  {
+    "text": "Filmworker director.",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7491055130958557
+    }
+  },
+  {
+    "text": "who directed The Ballad of Buster Scruggs?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8611480593681335
+    }
+  },
+  {
+    "text": "who directed pulp fiction",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7379092574119568
+    }
+  },
+  {
+    "text": "Who directed Match Point",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7360979318618774
+    }
+  },
+  {
+    "text": "who directed Coco",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9556610584259033
+    }
+  },
+  {
+    "text": "Let me know the director of Matrix",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9500831365585327
+    }
+  },
+  {
+    "text": "who directed New York New York?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7759106159210205
+    }
+  },
+  {
+    "text": "Who directed the film Snatch?",
+    "intent": "search_movie_director",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7792335748672485
+    }
+  },
+  {
+    "text": "Who starred in It Follows?",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8132717609405518
+    }
+  },
+  {
+    "text": "Which actors were in Ex Machina",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.4647962749004364
+    }
+  },
+  {
+    "text": "stars in The revenant?",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2965071499347687
+    }
+  },
+  {
+    "text": "Who acted in What We Do in the Shadows",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7392845749855042
+    }
+  },
+  {
+    "text": "actors in Sicario",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.520560622215271
+    }
+  },
+  {
+    "text": "acting in The big short",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6582949161529541
+    }
+  },
+  {
+    "text": "Starring in Spotlight",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.429526686668396
+    }
+  },
+  {
+    "text": "who starred in The Hateful Eight",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5576436519622803
+    }
+  },
+  {
+    "text": "which actors in the martian",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.6479856371879578
+    }
+  },
+  {
+    "text": "Stars in Slow West",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9697659611701965
+    }
+  },
+  {
+    "text": "who acted in Inside Out",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5949096083641052
+    }
+  },
+  {
+    "text": "who acted in Pulp Fiction",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7994716167449951
+    }
+  },
+  {
+    "text": "Who acted in Match Point",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.487086683511734
+    }
+  },
+  {
+    "text": "who acted in Alien",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4899257719516754
+    }
+  },
+  {
+    "text": "Who acted in Alien",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.48054948449134827
+    }
+  },
+  {
+    "text": "Who acted in Alien?",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.48054948449134827
+    }
+  },
+  {
+    "text": "who acted in alien",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.49655285477638245
+    }
+  },
+  {
+    "text": "who acted in sleepy hollow",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.44797104597091675
+    }
+  },
+  {
+    "text": "who acted in coco?",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.39884570240974426
+    }
+  },
+  {
+    "text": "who acted in bumblebee",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7038647532463074
+    }
+  },
+  {
+    "text": "who acted in coco",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.39884570240974426
+    }
+  },
+  {
+    "text": "who acted in Frozen",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.616563618183136
+    }
+  },
+  {
+    "text": "who acted in Fight Club",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9286196231842041
+    }
+  },
+  {
+    "text": "actors of deep blue",
+    "intent": "search_movie_actors",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9464322924613953
+    }
+  },
+  {
+    "text": "movies similar to Heat",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6926474571228027
+    }
+  },
+  {
+    "text": "which movies are similar to The Silence of the Lambs",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5303951501846313
+    }
+  },
+  {
+    "text": "suggest something like No Country for Old Men",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9493871331214905
+    }
+  },
+  {
+    "text": "give me something like Gangs of New York",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8932034373283386
+    }
+  },
+  {
+    "text": "What is similar to The Lord of the Rings The Two Towers",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5735370516777039
+    }
+  },
+  {
+    "text": "movie like Mystic River",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9912269711494446
+    }
+  },
+  {
+    "text": "suggestion like Ace Ventura Pet Detective",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8238338828086853
+    }
+  },
+  {
+    "text": "similar movies to coco",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6135213375091553
+    }
+  },
+  {
+    "text": "similar movies to Alien",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8678557276725769
+    }
+  },
+  {
+    "text": "suggest movies like Black Panther",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9555720686912537
+    }
+  },
+  {
+    "text": "Can you suggest movies similar to deep blue",
+    "intent": "search_similar_movies",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5791706442832947
+    }
+  }
+]

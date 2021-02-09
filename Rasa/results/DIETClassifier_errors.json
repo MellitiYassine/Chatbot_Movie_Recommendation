@@ -1,0 +1,100 @@
+[
+  {
+    "text": "do you like action movies",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.7668840289115906,
+        "value": "action",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "show me a thriller action adventure",
+    "entities": [
+      {
+        "start": 10,
+        "end": 18,
+        "value": "thriller",
+        "entity": "genre"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "value": "action",
+        "entity": "genre_2"
+      },
+      {
+        "start": 26,
+        "end": 35,
+        "value": "adventure",
+        "entity": "genre_3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre_3",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.540647029876709,
+        "value": "thriller",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre_2",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.4874151647090912,
+        "value": "action",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre_3",
+        "start": 26,
+        "end": 35,
+        "confidence_entity": 0.5172973871231079,
+        "value": "adventure",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hey bot find movies with Woody Allen",
+    "entities": [
+      {
+        "start": 25,
+        "end": 36,
+        "value": "Woody Allen",
+        "entity": "actor"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "director",
+        "start": 25,
+        "end": 36,
+        "confidence_entity": 0.6452222466468811,
+        "value": "Woody Allen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What can you find me directed by [Guillermo del Toro](director?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "director",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.5000700950622559,
+        "value": "Guillermo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

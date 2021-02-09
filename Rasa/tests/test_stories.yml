@@ -1,0 +1,92 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_i_am_a_bot
+
+- story: recommend a movie
+  steps:
+  - user: |
+      can you find me a good comedy?
+    intent: recommend_movie_genre
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - user: |
+      yes, thank you.
+    intent: affirm
+  - action: utter_happy
+  - user: |
+      no, that is all.
+    intent: deny
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: what did they direct
+  steps:
+  - user: |
+      what movies has Oliver Stone directed?
+    intent: search_by_director
+  - action: action_director_verification
+  - user: |
+      yes
+    intent: affirm
+  - action: action_search_by_director
+  - action: utter_whatelse
+  - user: |
+      can you recommend a movie like Born on the 4th of July?
+    intent: search_similar_movies
+  - action: action_movie_verification
+  - user: |
+      that is the movie
+      intent: affirm
+  - action: action_rec_movie_by_movie
+  - action: utter_next
+  - user:
+      no, that is everything.
+    intent: deny
+  - action: utter_ok
+  - action: utter_goodbye
+
+- story: who starred in
+  steps:
+  - user: |
+      who starred in Fight Club?
+    intent: search_movie_data
+  - action: action_movie_verification
+  - user: |
+      yes
+    intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_did_that_help
+  - user:
+      yes, that is what I was looking for.
+  - action: utter_happy
+  - user: |
+      what other movies has Ed Norton been in?
+    intent: search_with_actor
+  - action: action_actor_verification
+  - user: |
+      that isn't him
+    intent: deny
+  - action: action_actor_verification_2
+  - user: |
+      that's the one
+    intent: affirm
+  - action: action_search_with_actor_2
+  - action: utter_next
+  - user: |
+      Nope
+  - action: utter_ok
+  - action: utter_goodbye

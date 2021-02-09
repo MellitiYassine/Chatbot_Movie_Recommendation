@@ -1,0 +1,50 @@
+version: "2.0"
+stories:
+- story: recommend a movie (C:\Users\dougm\AppData\Local\Temp\tmphh5i3dx1\231ea4be77754129ad027734e94441d8_test_stories.yml)
+  steps:
+  - intent: recommend_movie_genre  # predicted: recommend_movie_genre: can you find me a good [comedy](genre)?
+  - action: action_rec_movie_by_genre
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy  # predicted: utter_next
+  - intent: deny  # predicted: dismiss: no, that is all.
+  - action: utter_ok  # predicted: utter_try_again
+  - action: utter_goodbye  # predicted: action_listen
+- story: what did they direct (C:\Users\dougm\AppData\Local\Temp\tmphh5i3dx1\231ea4be77754129ad027734e94441d8_test_stories.yml)
+  steps:
+  - intent: search_by_director  # predicted: search_by_director: what movies has [Oliver Stone](director) directed?
+  - action: action_director_verification
+  - intent: affirm
+  - action: action_search_by_director
+  - action: utter_whatelse  # predicted: utter_happy
+  - intent: search_similar_movies  # predicted: search_similar_movies: can you recommend a movie like [Born on](movie_title) the 4th of [July](actor)?
+  - action: action_movie_verification
+  - user: |-
+      that is the movie
+      intent: affirm
+  - action: action_rec_movie_by_movie  # predicted: utter_did_that_help
+  - action: utter_next  # predicted: utter_did_that_help
+  - intent: deny
+  - action: utter_ok  # predicted: utter_try_again
+  - action: utter_goodbye  # predicted: action_listen
+- story: who starred in (C:\Users\dougm\AppData\Local\Temp\tmphh5i3dx1\231ea4be77754129ad027734e94441d8_test_stories.yml)
+  steps:
+  - intent: search_movie_data  # predicted: search_movie_data: who starred in [Fight Club](movie_title)?
+  - action: action_movie_verification
+  - intent: affirm
+  - action: action_movie_data_lookup
+  - action: utter_did_that_help  # predicted: action_listen
+  - user: |-
+      yes, that is what I was looking for.
+  - action: utter_happy  # predicted: utter_did_that_help
+  - intent: search_with_actor  # predicted: search_with_actor: what other movies has [Ed Norton been](actor) in?
+  - action: action_actor_verification
+  - intent: deny  # predicted: dismiss: that isn't him
+  - action: action_actor_verification_2
+  - intent: affirm  # predicted: dismiss: that's the one
+  - action: action_search_with_actor_2
+  - action: utter_next
+  - user: |-
+      Nope
+  - action: utter_ok  # predicted: utter_next
+  - action: utter_goodbye  # predicted: action_listen

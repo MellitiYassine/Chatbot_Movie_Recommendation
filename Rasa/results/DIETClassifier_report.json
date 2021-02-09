@@ -1,0 +1,66 @@
+{
+  "genre": {
+    "precision": 0.9090909090909091,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.9090909090909091,
+    "support": 11,
+    "confused_with": {
+      "genre_3": 1
+    }
+  },
+  "movie_title": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 181,
+    "confused_with": {}
+  },
+  "genre_3": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "actor": {
+    "precision": 1.0,
+    "recall": 0.9607843137254902,
+    "f1-score": 0.98,
+    "support": 51,
+    "confused_with": {
+      "director": 2
+    }
+  },
+  "director": {
+    "precision": 0.9482758620689655,
+    "recall": 1.0,
+    "f1-score": 0.9734513274336283,
+    "support": 55,
+    "confused_with": {}
+  },
+  "genre_2": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9835526315789473,
+    "recall": 0.9900662251655629,
+    "f1-score": 0.9867986798679869,
+    "support": 302
+  },
+  "macro avg": {
+    "precision": 0.9206722396377569,
+    "recall": 0.9783125371360666,
+    "f1-score": 0.9437570394207562,
+    "support": 302
+  },
+  "weighted avg": {
+    "precision": 0.9850612773083658,
+    "recall": 0.9900662251655629,
+    "f1-score": 0.9871517318173826,
+    "support": 302
+  }
+}
